@@ -1,0 +1,243 @@
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <style>
+            *{ 
+             margin: 0;
+            padding: 0;  
+            font-family: 'Poppins', sans-serif;
+            }
+            body {background-image:url(images/97012186-cecb-4abe-80f3-e6e84ef67572.jpg);
+            width:100%;
+            min-height: 100vh;
+            background-position: center;
+            background-size: cover;
+            position: relative;    
+            }
+            h1 {
+            margin-top:  1cm;
+            letter-spacing:  0.1em;;
+            padding-left: 4cm;
+            padding-right: 4cm; 
+            text-align: center;
+            color: burlywood;
+            font-size: 35px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+             }
+            h2 { padding-left: 4cm;
+            padding-right: 4cm;
+            width: auto;
+            color: burlywood ;
+            font-size: 28px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            }
+            p {padding-left: 4cm;
+            padding-right: 4cm;
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            font-weight: 300;
+            }
+            
+            /* Slideshow container */
+.slideshow-container {
+  max-width: 430px;
+  position:relative;
+  margin: auto;
+  max-height: 630px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+    </style>
+
+    <title>HEALTHY FOOD HABITS</title>
+</head>
+    
+<body>
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/ad0b8d16-d448-4fef-b290-a2fd11c58e4c.jpg"width= 418px height="630px">
+      <div class="text"></div>
+    </div>
+    
+     <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/fd70bcda-0e3f-4732-929b-941d593d4e94.jpg"width= 418px height="630px">
+      <div class="text"></div>
+    </div>
+    
+      <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/baa400f4-05a6-4725-87f0-81922003e499.jpg"width= 418px height="630px">
+      <div class="text"></div>
+    </div>
+    
+     <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/a6a4807f-a30e-4ac4-a5de-f96ba10ef0bc.jpg"width= 418px height="630px">
+      <div class="text"></div>
+    </div>
+     
+  
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+      
+  </div>
+    <script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+        </style>
+        <title>HEALTHY FOOD HABITS</title>
+    </head>
+    <body>
+        <h1 style="font-family: 'Poppins', sans-serif;">KEEP YOUR DIET HEALTHY</h1>
+        <br><h2>Healthy Diet, Healthy Skin</h2>  
+        <br><p>Did you know that what you eat can affect your skin long-term? It’s true! Studies have shown that a poor diet can lead to premature ageing of the skin as well as many other skin problems.</p>
+        <p>
+On the flip side, eating the right foods can help to prevent many common skin problems. For example, if you want to avoid wrinkles, you should make sure to include plenty of antioxidants in your diet. If your skin is prone to acne breakouts, eating foods that are high in Vitamin A can help to prevent them.</p>
+<p>
+Eating a healthy, nutritious diet helps to promote healthy cell growth and can even help to repair the damage done to the skin by sun exposure and other environmental factors. Long-term, a healthy diet will help you to achieve and maintain clear, youthful-looking skin.</p>
+        
+        <br><h2 style="font-family: 'Poppins', sans-serif;">How to nurture a healthy skin? </h2>
+<p>
+    1) Protect yourself from the sun</p>
+<p>
+    2) Eat a healthy diet</p> 
+<p>
+    3) Drink 8 to 10 glass of water to keep your skin hydrated </p>
+<p>
+    4) Don't smoke cause it worsens skin diseases</p>
+<p>
+    5) Follow a proper Skincare routine </p>
+<p>
+    6) Get enough rest inorder to repair your skin </p>
+<p>
+    7) Consult a dermatologist if required </p>
+<p>
+    8) Do  Facial exercises daily</p>
+        
+       
+    </body>
+</html>
